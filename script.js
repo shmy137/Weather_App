@@ -84,6 +84,8 @@ async function searchWeather() {
 
     fiveDays.forEach((day) => {
       forecast.innerHTML += `
+      
+                <div class="forecast-card-outer">
                 <div class="forecast-card">
 
                     <h3>${day.dt_txt.split(" ")[0]}</h3>
@@ -94,6 +96,7 @@ async function searchWeather() {
 
                     <p>💧 ${day.main.humidity}%</p>
 
+                </div>
                 </div>
             `;
     });

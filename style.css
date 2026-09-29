@@ -1,93 +1,100 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #e8f1ff;
+  font-family: Arial, sans-serif;
+  background-image: url("./images/23281.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .container {
-    width: 90%;
-    max-width: 500px;
-    margin: 80px auto;
-    text-align: center;
+  width: 90%;
+  max-width: 500px;
+  margin: 80px auto;
+  text-align: center;
 }
 
 h1 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .search-box {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 #cityInput {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
 }
 
 #searchBtn {
-    padding: 12px 20px;
-    border: none;
-    background: #007bff;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
+  padding: 12px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 #loading {
-    display: none;
-    margin-top: 20px;
+  display: none;
+  margin-top: 20px;
 }
 
 #error {
-    color: red;
-    margin-top: 20px;
+  color: red;
+  margin-top: 20px;
 }
 
 #weatherCard {
-    display: none;
-    background: white;
-    padding: 25px;
-    margin-top: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px #ccc;
+  display: none;
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #ccc;
 }
 
 #weatherCard p {
-    margin: 12px 0;
+  margin: 12px 0;
 }
 
 #Forecast {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    /* background-color: #007bff; */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 25px;
+}
+
+.forecast-card-outer {
+  flex: 0 0 auto;
 }
 
 .forecast-card {
-    background: rgb(244, 244, 244);
-    width: 150px;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgb(244, 244, 244);
+  width: 150px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .forecast-card h3 {
-    margin-bottom: 15px;
-    font-size: 18px;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .forecast-card p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
