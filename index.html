@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +15,7 @@
         <h1>🌤️ Weather App</h1>
 
         <div class="search-box">
-            <input
-                type="text"
-                id="cityInput"
-                placeholder="Enter city name"
-            >
+            <input type="text" id="cityInput" placeholder="Enter city name">
 
             <button id="searchBtn">Search</button>
         </div>
@@ -31,9 +28,18 @@
 
         <div id="Forecast"></div>
 
+        <div id="favoritesSidebar">
+            <div class="favorites-header">
+                <h2>⭐ Favorites</h2>
+            </div>
+
+            <div id="favoritesList"></div>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
